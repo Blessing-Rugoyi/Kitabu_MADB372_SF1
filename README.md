@@ -45,18 +45,7 @@ events up (`onReserve`, `onRenew`, ...), so badges and the dashboard update auto
 - Status is always shown as text + icon, never by colour alone; action buttons have text labels.
 - Theme is light-only to match the wireframe palette (navy `#102A43`, teal `#0F766E`, amber `#F59E0B`).
 
-## Screenshots (CRUD lifecycle)
-> Add your own screenshots to `docs/screenshots/` using the file names listed in `docs/screenshots/README.txt`.
 
-| Catalogue | Search | Filter | Reserve sheet |
-| --- | --- | --- | --- |
-| ![Catalogue](docs/screenshots/01_catalogue.png) | ![Search](docs/screenshots/02_search.png) | ![Filter](docs/screenshots/03_filter.png) | ![Reserve sheet](docs/screenshots/04_reserve_sheet.png) |
-
-| Create (reservation) | Update (renew) | Update (return) | Delete (cancel) |
-| --- | --- | --- | --- |
-| ![Reservations](docs/screenshots/05_reservations.png) | ![Renew](docs/screenshots/06_renew.png) | ![Return](docs/screenshots/07_return.png) | ![Cancel](docs/screenshots/08_cancel.png) |
-
-![CRUD demo](docs/screenshots/crud_demo.gif)
 
 ## Tests
 `./gradlew test` runs unit tests for `RentalPolicy` (dates/renewal rules) and `InputSanitizer`.
