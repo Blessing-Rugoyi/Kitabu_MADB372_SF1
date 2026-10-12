@@ -65,7 +65,18 @@ fun CatalogRoute(
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     CollectUserMessages(viewModel.messages, snackbarHostState)
-
+    CatalogScreen(
+        uiState = uiState,
+        onQueryChange = viewModel::onQueryChange,
+        onClearQuery = viewModel::onClearQuery,
+        onFilterSelected = viewModel::onFilterSelected,
+        onBookClick = viewModel::onBookClick,
+        onDurationSelected = viewModel::onDurationSelected,
+        onReserve = viewModel::onReserveConfirmed,
+        onDismissSheet = viewModel::onSheetDismissed,
+        modifier = modifier
+    )
+}
 
 /** Stateless catalogue screen: everything it shows and every action is passed in. */
 @Composable
